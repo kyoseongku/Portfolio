@@ -24,13 +24,13 @@
   }
 }
 
-.project-top p {
+.project-trigger p {
   float: left;
 }
-.project-top span {
+.project-trigger span {
   float: right;
 }
-.project-top span:hover {
+.project-trigger span:hover {
   cursor: pointer;
 }
 

@@ -1,9 +1,0 @@
-export const GET_CAMERA_TRY = 'GET_CAMERA_TRY'
-export const GET_CAMERA_SUCCESS = 'GET_CAMERA_SUCCESS'
-export const GET_CAMERA_FAIL = 'GET_CAMERA_FAIL'
-
-export const DO_CAPTURE = 'DO_CAPTURE'
-export const DO_RECAPTURE = 'DO_RECAPTURE'
-
-export const OCR_SUCCESS = 'OCR_SUCCESS'
-export const OCR_FAIL = 'OCR_FAIL'
