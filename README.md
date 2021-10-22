@@ -4,13 +4,11 @@ I do a demonstrate of my work
 
 [Do a viewing](https://www.kyoseong.com)
 
-## TODO
+### TODO
 
-* Transfer files in S3
+* Cleanup S3
 
-## Usage
-
-#### Optimal string alignment distance using Damerau–Levenshtein distance algorithm
+### Optimal string alignment distance using Damerau–Levenshtein distance algorithm
 
 ```
 // Sample request

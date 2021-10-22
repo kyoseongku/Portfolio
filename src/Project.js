@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
-import { bindActionCreators } from 'redux'
-import { connect } from 'react-redux'
 import './Project.css'
-import tags from '../constants/tags'
+import tags from './tags'
 
 
-class Project extends Component {
+export default class Project extends Component {
   constructor(props) {
     super(props)
 
@@ -63,15 +61,3 @@ class Project extends Component {
   }
 }
 
-
-const mapStateToProps = state => state
-
-
-const mapDispatchToProps = dispatch => bindActionCreators({
-}, dispatch)
-
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Project)

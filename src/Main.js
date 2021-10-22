@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
-import { bindActionCreators } from 'redux'
-import { connect } from 'react-redux'
 import './Main.css'
-import Project from '../components/Project'
-import supercare from '../constants/supercare'
-import personal from '../constants/personal'
+import Project from './Project'
+import supercare from './supercare'
+import personal from './personal'
 
 
-class Main extends Component {
+export default class Main extends Component {
   constructor(props) {
     super(props)
 
@@ -213,8 +211,8 @@ class Main extends Component {
                 <div className='desc-block'>
                   <p className='center'><b>Other languages</b></p>
                   <p className='center'>(Schoolwork / personal projects)</p>
-                  <p>Rusty: C, C++, Java</p>
-                  <p>Very rusty: Assembly, Lisp, MySQL, OCaml, PHP, Python</p>
+                  <p>Rusty: C, C++, Java, SQL</p>
+                  <p>Very rusty: Assembly, Lisp, OCaml, PHP, Python</p>
                 </div>
               </div>
               <div className='col s12 m6 l6'>
@@ -236,15 +234,3 @@ class Main extends Component {
   }
 }
 
-
-const mapStateToProps = state => state
-
-
-const mapDispatchToProps = dispatch => bindActionCreators({
-}, dispatch)
-
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Main)
