@@ -33,6 +33,9 @@ export default class Project extends Component {
         <p className='project-title'><b>{this.props.data.name}</b></p>
         <p className='project-info'>{this.props.data.info}</p>
         {this.state.showDetails && (<>
+          {this.props.data.points.map((point, i) => {
+            return <p key={i} className='project-point'>- {point}</p>
+          })}
           <div className='project-tags'>
             {this.props.data.tags.map((tagKey, i) => {
               return (
@@ -47,9 +50,6 @@ export default class Project extends Component {
               <a href={this.props.data.media.src}>Click here to watch a demo</a>
             </div>
           )}
-          {this.props.data.points.map((point, i) => {
-            return <p key={i} className='project-point'>- {point}</p>
-          })}
           <div className='project-trigger'>
             <span className='light-blue-text' onClick={this.toggleDetails}>
               Hide

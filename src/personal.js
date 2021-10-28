@@ -1,5 +1,39 @@
 export default [
   {
+    name: 'Crypto trading bot',
+    role: 'Author',
+    info: 'Automated trading bot for cryptocurrencies',
+    points: [
+      'Developed a program that makes trading decisions based on various technical indicators',
+      'Ability to execute modularized trading strategies for flexibility and adaptability to market cycles and trends',
+      'React-based UI that charts coin prices, overlaid with technical indicator graphs and trade points'
+    ],
+    tags: [
+      'njs',
+      'rjs',
+      'ftx'
+    ]
+  },
+  {
+    name: 'AirBuddy',
+    role: 'Author',
+    info: 'A virtual rent-a-friend platform',
+    points: [
+      'Developed a full-stack web application, similar to the Dylect project',
+      'Added payment handling, scheduling, and video broadcasting'
+    ],
+    tags: [
+      'njs',
+      'mat',
+      'rrr',
+      'sg',
+      'tw_sms',
+      'tw_vid',
+      'aws_doc',
+      'aws_s3'
+    ]
+  },
+  {
     name: 'WebVR Fiddle',
     role: 'Author',
     info: 'Places media (image, video, or 3D object) onto the user\'s video feed where a mapped color appears',
