@@ -35,11 +35,18 @@
   width: 100%;
 }
 
-.sch-col {
+.work-row {
+  margin: 40px 0px;
+}
+.work-col {
   padding: 20px 20px 0px 20px;
 }
-.sch-col p {
+.work-col p {
   margin-top: 5px;
+}
+
+.alto-logo img {
+  height: 100px;
 }
 
 .school-img {

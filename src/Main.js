@@ -143,20 +143,38 @@ export default class Main extends Component {
             <i className='material-icons medium brown-text'>card_travel</i>
             <h4 className='light'>work experience</h4>
           </div>
-          <div className='row'>
+          <div className='row work-row'>
             <div className='col s12 m6 l6'>
-              <div className='center sch-col'>
+              <div className='center work-col alto-logo'>
+                <img
+                  className='responsive-img'
+                  src='/static/img/logo_alto.png'
+                  alt='Alto logo'
+                />
+                <p>Dec. 2021 - Present</p>
+                <p>Senior software engineer</p>
+              </div>
+            </div>
+            <div className='col s12 m6 l6'>
+              <div className='work-col'>
+                <p>Details to come</p>
+              </div>
+            </div>
+          </div>
+          <div className='row work-row'>
+            <div className='col s12 m6 l6'>
+              <div className='center work-col'>
                 <img
                   className='responsive-img'
                   src='/static/img/logo_sch.png'
                   alt='SuperCare Health logo'
                 />
-                <p>Feb. 2017 - Present</p>
+                <p>Feb. 2017 - Dec. 2021</p>
                 <p>Senior software engineer</p>
               </div>
             </div>
             <div className='col s12 m6 l6'>
-              <div className='sch-col'>
+              <div className='work-col'>
                 <p><b>Designed and developed</b> off of loose requirements and added features to existing code base.</p>
                 <p><b>Provided documentation</b> including API reference, versioning, guides for users, notes for developers, and more.</p>
                 <p><b>Wrote automated tests</b> as well as interactive CLI programs for cases requiring human interaction.</p>
@@ -241,7 +259,7 @@ export default class Main extends Component {
                   window.open('https://s3-us-west-2.amazonaws.com/kks.portfolio/static/Resume-Kyoseong_Ku.pdf', '_blank')
                 }}
               >
-                <span>Resume (Oct. 2021)</span>
+                <span>Resume (Jan. 2022)</span>
               </div>
             </div>
           </div>
@@ -251,7 +269,7 @@ export default class Main extends Component {
           </div>
           <div className='row'>
             <p className='me-tb'><b>Languages</b></p>
-            <p>JavaScript/Node.js, Go, Rust, Shell, Solidity</p>
+            <p>Node.js+TypeScript, Go, Rust, Shell, Solidity</p>
             <p className='me-tb'><b>Languages (Rusty - schoolwork)</b></p>
             <p>Assembly, C, C++, Java, Lisp, OCaml, SQL, PHP, Python</p>
             <p className='me-tb'><b>Front-end/UI</b></p>

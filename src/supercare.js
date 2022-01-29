@@ -169,11 +169,10 @@ export default [
     role: 'Contributor',
     info: 'Developed auxiliary full-stack services providing various functionalities for the in-house document management application and currently assisting with migrating the front-end to React',
     points: [
-      'Dynamic PDF builder which takes user input and displays the preview both with React components, then generates the PDF for download and/or email/fax via Notification Service (v2)',
-      'Created a shopping cart React+Redux component that allows users to select specific pages across multiple fax documents and reorder them before sending them off for merging into a single PDF',
+      'Dynamic PDF builder which takes user input, displays a preview of the form with React components, converts the React UI into PDF, then makes it available for download and email/fax via Notification Service (v2)',
+      'Created a shopping cart React+Redux component that allows users to select specific pages across multiple fax documents and reorder them before merging into a single PDF',
       'Automated crawling of a 3rd party web portal using Selenium WebDriver (log in, navigate, retrieve data, and log out)',
       'Built a basic document recognition service using Google Vision API with the ability to recognize 9 different documents',
-      'Provided a service that generates PDF files with embedded QR code and custom data, along with a web page where users can specify the custom data (user, date, etc.) to render',
       'Periodic task that converts files from TIFF to PDF format, places copies in network shared folders, uploads to appropriate folders in Google Drive, then uses the Notification Service (v1) to email the PDF to appropriate recipients',
       'Periodic task to retrieve and parse emails, sent by a specified sender within a specified time range, using Gmail API',
       'Periodic task to clean up aged files in specified directories',
@@ -199,6 +198,7 @@ export default [
     info: 'Made code changes to the in-house delivery management application',
     points: [
       'Provided an address validation microservice using USPS API',
+      'Provided a service that generates PDF files with embedded QR code and custom data, along with a web page where users can specify the custom data (user, date, etc.) to render',
       'Integrated calls to the Notification Service (v1) in the app\'s error handling module, which discovered previously unknown errors',
       'Set up the back-end on a new AWS EC2 instance and modified it to run on HTTPS',
       'Developed 6 new endpoints allowing for batch update operations',

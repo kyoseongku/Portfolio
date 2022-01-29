@@ -1,4 +1,9 @@
 export default {
+  ava: {
+    name: 'AVA.js',
+    type: 'LIB',
+    class: 'blue white-text'
+  },
   aws_c: {
     name: 'AWS Connect',
     type: 'BEI',
@@ -82,6 +87,11 @@ export default {
     name: 'Go',
     class: 'light-blue accent-1'
   },
+  gql: {
+    name: 'GraphQL',
+    type: 'LIB',
+    class: 'white purple-text text-accent-3'
+  },
   jest: {
     name: 'Jest',
     type: 'LIB',
@@ -151,6 +161,11 @@ export default {
   sh: {
     name: 'Shell',
     class: 'black light-green-text text-accent-3'
+  },
+  snn: {
+    name: 'Sinon.js',
+    type: 'LIB',
+    class: 'white brown-text'
   },
   sol: {
     name: 'Solidity',
