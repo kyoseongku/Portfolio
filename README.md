@@ -1,8 +1,8 @@
 # Henlo world
 
-I do a demonstrate of my work
+I do a demonstrate of my work. [Do a viewing](https://www.kyoseong.com).
 
-[Do a viewing](https://www.kyoseong.com)
+The portfolio code is NOT representative of my front-end work. Just something I threw together a while back.
 
 ### TODO
 
@@ -21,7 +21,7 @@ curl
           "I am another sentence"
         ]
       }'
-  https://ey6mippnqc.execute-api.us-west-2.amazonaws.com/1/osad
+  https://[REMOVED].execute-api.us-west-2.amazonaws.com/1/osad
 
 // Sample response
 {

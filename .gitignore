@@ -6,4 +6,3 @@ node_modules/
 fiddle
 parseCSV
 osad
-src/constants/worklogCSV/*
