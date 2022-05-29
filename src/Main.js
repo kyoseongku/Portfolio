@@ -269,9 +269,9 @@ export default class Main extends Component {
           </div>
           <div className='row'>
             <p className='me-tb'><b>Languages</b></p>
-            <p>Node.js+TypeScript, Go, Rust, Shell, Solidity</p>
-            <p className='me-tb'><b>Languages (Rusty - schoolwork)</b></p>
-            <p>Assembly, C, C++, Java, Lisp, OCaml, SQL, PHP, Python</p>
+            <p>Node.js+TypeScript, Rust</p>
+            <p className='me-tb'><b>Languages used in the past</b></p>
+            <p>Assembly, C, C++, Java, Go, Lisp, OCaml, PHP, Python, Shell/bash, Solidity, SQL</p>
             <p className='me-tb'><b>Front-end/UI</b></p>
             <p>{tagGroups.FE.join(', ')}</p>
             <p className='me-tb'><b>Back-end/Infrastructure</b></p>

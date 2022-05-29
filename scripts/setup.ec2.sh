@@ -1,8 +1,17 @@
 # /bin/bash
 
-# scp setup.ec2.sh and vimrc to /home/ubuntu
+# Prerequisites:
+#   Temporarily run a high performance EC2 for setup
+#   scp setup.ec2.sh to /home/ubuntu
+#   scp vimrc to /home/ubuntu
+# Root user ~/.bashrc additions:
+#   alias rm='rm -v';
+#   export PATH="/root/.local/share/solana/install/active_release/bin:$PATH";
+#   cd ~;
 
-echo "Starting setup script";
+echo "Did you complete the prerequisites listed at top of setup.ec2.sh?";
+echo "Press enter to continue";
+read;
 
 if [ $(whoami) != "root" ]; then
   echo "Run this as the root user";
@@ -29,6 +38,51 @@ fi
 echo "Checking for Ubuntu updates";
 cd ~;
 apt update && apt upgrade -y;
+
+echo "Installing Linux packages";
+apt install -y gcc unzip pkg-config build-essential libudev-dev libssl-dev;
+
+has_aws_dir=$(ls -a ~ | egrep "^.aws$");
+if [ -z $has_aws_dir ]; then
+  echo "Setting up AWS";
+  mkdir ~/.aws;
+  touch ~/.aws/credentials;
+  echo "AWS access key:";
+  read aws_access;
+  echo "AWS secret key:";
+  read aws_secret;
+  echo "[default]" >> ~/.aws/credentials;
+  echo "aws_access_key_id="$aws_access >> ~/.aws/credentials;
+  echo "aws_secret_access_key="$aws_secret >> ~/.aws/credentials;
+else
+  echo "AWS already set up";
+  cat ~/.aws/credentials;
+fi
+
+# AWS CLI
+has_aws_cli=$(command -v aws);
+if [ -z $has_aws_cli ]; then
+  echo "Installing AWS CLI";
+  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip";
+  unzip awscliv2.zip;
+  ./aws/install;
+else
+  echo "AWS CLI already installed";
+  aws --version;
+fi
+
+# MongoDB
+has_mongo=$(command -v mongo);
+if [ -z $has_mongo ]; then
+  echo "Installing MongoDB";
+  wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | apt-key add -;
+  echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-5.0.list;
+  apt-get update;
+  apt-get install -y mongodb-org=5.0.8 mongodb-org-database=5.0.8 mongodb-org-server=5.0.8 mongodb-org-shell=5.0.8 mongodb-org-mongos=5.0.8 mongodb-org-tools=5.0.8;
+else
+  echo "MongoDB already installed";
+  mongo --version;
+fi
 
 echo "Installing plugins for vim";
 has_vim_dir=$(ls -a ~ | egrep "^.vim$");
@@ -75,23 +129,48 @@ if [ -z $has_root_vimrc ]; then
     mv /home/ubuntu/vimrc ~/.vimrc;
   fi
 fi
+cd ~;
+echo "Installed plugins for vim";
 
-echo "Installing Rust";
 has_rust=$(command -v rustc);
 if [ -z $has_rust ]; then
+  echo "Installing Rust";
   curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh && source ~/.cargo/env;
+else
+  echo "Rust already installed";
+  rustup --version;
+  cargo --version;
 fi
-cargo --version;
-rustup --version;
 
-echo "Installing Node and NPM";
 has_node=$(command -v node);
 if [ -z $has_node ]; then
+  echo "Installing Node and NPM";
   curl -sL https://deb.nodesource.com/setup_16.x -o nodesource_setup.sh && bash nodesource_setup.sh && apt-get install -y nodejs;
+else
+  echo "Node and NPM already installed";
+  echo "Node "$(node --version);
+  echo "NPM v"$(npm --version);
 fi
-echo "Node (v16.13.2 when script written): "$(node --version);
-echo "NPM (v8.1.2 when script written): v"$(npm --version);
 
-cd ~;
+has_sol_cli=$(command -v solana);
+if [ -z $has_sol_cli ]; then
+  echo "Installing Solana CLI";
+  sh -c "$(curl -sSfL https://release.solana.com/stable/install)";
+else
+  echo "Solana CLI already installed";
+  solana --version;
+fi
+
+has_anchor=$(command -v anchor);
+if [ -z $has_anchor ]; then
+  echo "Installing Anchor";
+  cargo install --git https://github.com/project-serum/anchor avm --locked --force;
+  avm install latest;
+  avm use latest;
+else
+  echo "Anchor already installed";
+  anchor --version;
+fi
+
 echo "Done!";
 
