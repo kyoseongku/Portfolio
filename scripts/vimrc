@@ -4,6 +4,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'isRuslan/vim-es6'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'peitalin/vim-jsx-typescript'
 Plugin 'rust-lang/rust.vim'
 Plugin 'tomlion/vim-solidity'
 call vundle#end()

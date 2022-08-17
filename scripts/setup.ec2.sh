@@ -107,6 +107,18 @@ if [ -z $has_vim_es6 ]; then
   git clone https://github.com/isRuslan/vim-es6.git;
 fi
 
+# TS syntax plugin
+has_vim_ts=$(ls | grep typescript-vim);
+if [ -z $has_vim_ts ]; then
+  git clone https://github.com/leafgarland/typescript-vim.git;
+fi
+
+# TSX syntax plugin
+has_vim_tsx=$(ls | grep vim-jsx-typescript);
+if [ -z $has_vim_tsx ]; then
+  git clone https://github.com/peitalin/vim-jsx-typescript.git;
+fi
+
 # Rust syntax plugin
 has_vim_rust=$(ls | grep rust.vim);
 if [ -z $has_vim_rust ]; then
