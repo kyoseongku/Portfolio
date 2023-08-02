@@ -48,6 +48,14 @@ export default {
     type: 'LIB',
     class: 'orange darken-4 amber-text text-darken-1'
   },
+  fb_f: {
+    name: 'Firebase Functions',
+    type: 'BEI'
+  },
+  fb_s: {
+    name: 'Firestore',
+    type: 'BEI'
+  },
   ftx: {
     name: 'FTX',
     type: 'API',
@@ -83,6 +91,18 @@ export default {
     type: 'API',
     class: 'purple-text'
   },
+  gcp_bq: {
+    name: 'BigQuery',
+    type: 'BEI'
+  },
+  gcp_cf: {
+    name: 'GCP Cloud Functions',
+    type: 'BEI'
+  },
+  gcp_lta: {
+    name: 'GCP Logging & Tracing & Alerts',
+    type: 'BEI'
+  },
   go: {
     name: 'Go',
     class: 'light-blue accent-1'
@@ -100,6 +120,10 @@ export default {
   jv: {
     name: 'Java',
     class: 'light-blue darken-2 amber-text'
+  },
+  k8s: {
+    name: 'Kubernetes',
+    type: 'BEI'
   },
   mac: {
     name: 'Mocha & Chai',
@@ -125,6 +149,10 @@ export default {
     type: 'LIB',
     class: 'cyan darken-2 white-text'
   },
+  ot: {
+    name: 'OpenTelemetry',
+    type: 'LIB'
+  },
   pj: {
     name: 'Pug/Jade',
     type: 'FE',
@@ -134,6 +162,10 @@ export default {
     name: 'PhantomJS',
     type: 'LIB',
     class: 'teal white-text'
+  },
+  psql: {
+    name: 'PostgreSQL',
+    type: 'BEI'
   },
   rjs: {
     name: 'React',
@@ -175,6 +207,10 @@ export default {
     name: 'Selenium WebDriver',
     type: 'FE',
     class: 'blue-grey white-text'
+  },
+  swg: {
+    name: 'Swagger',
+    type: 'LIB'
   },
   t3js: {
     name: 'three.js',

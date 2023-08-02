@@ -152,11 +152,13 @@ export default class Main extends Component {
                   alt='Alto logo'
                 />
                 <p>Dec. 2021 - Present</p>
-                <p>Senior software engineer</p>
+                <p>Senior back-end software engineer</p>
               </div>
             </div>
             <div className='col s12 m6 l6'>
               <div className='work-col'>
+                <p>Created the back-end for the shift scheduling product</p>
+                <p>Contributed to several services by adding new features, code fixes, and improved robustness with tracing, helpful logging, and alerts</p>
                 <p>Details to come</p>
               </div>
             </div>
@@ -269,9 +271,9 @@ export default class Main extends Component {
           </div>
           <div className='row'>
             <p className='me-tb'><b>Languages</b></p>
-            <p>Node.js+TypeScript, Rust</p>
+            <p>Node.js+TypeScript</p>
             <p className='me-tb'><b>Languages used in the past</b></p>
-            <p>Assembly, C, C++, Java, Go, Lisp, OCaml, PHP, Python, Shell/bash, Solidity, SQL</p>
+            <p>Assembly, C, C++, Java, Go, Lisp, OCaml, PHP, Python, Rust, Shell/bash, Solidity, SQL</p>
             <p className='me-tb'><b>Front-end/UI</b></p>
             <p>{tagGroups.FE.join(', ')}</p>
             <p className='me-tb'><b>Back-end/Infrastructure</b></p>
