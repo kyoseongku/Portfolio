@@ -259,7 +259,7 @@ export default class Main extends Component {
                   window.open('https://s3-us-west-2.amazonaws.com/kks.portfolio/static/Resume-Kyoseong_Ku.pdf', '_blank')
                 }}
               >
-                <span>Resume (Jan. 2022)</span>
+                <span>Resume (Aug. 2023)</span>
               </div>
             </div>
           </div>
