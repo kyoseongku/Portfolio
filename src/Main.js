@@ -151,15 +151,17 @@ export default class Main extends Component {
                   src='/static/img/logo_alto.png'
                   alt='Alto logo'
                 />
-                <p>Dec. 2021 - Present</p>
+                <p>Dec. 2021 - Aug. 2023</p>
                 <p>Senior back-end software engineer</p>
               </div>
             </div>
             <div className='col s12 m6 l6'>
               <div className='work-col'>
-                <p>Created the back-end for the shift scheduling product</p>
-                <p>Contributed to several services by adding new features, code fixes, and improved robustness with tracing, helpful logging, and alerts</p>
-                <p>Details to come</p>
+                <p>Created the microservices, serverless functions, and helped design the models required to realize the shift scheduling product</p>
+                <p>Contributed to several services by adding new features, bug fixes, and improved their robustness with tracing, helpful logging, alerts, and increased unit test coverage</p>
+                <p>Started and maintained an engineering support handbook to increase response times</p>
+                <p>Mentored junior developers to ensure consistent architecture and codebase</p>
+                <p><i>Additional details and tags to come</i></p>
               </div>
             </div>
           </div>
@@ -273,7 +275,7 @@ export default class Main extends Component {
             <p className='me-tb'><b>Languages</b></p>
             <p>Node.js+TypeScript</p>
             <p className='me-tb'><b>Languages used in the past</b></p>
-            <p>Assembly, C, C++, Java, Go, Lisp, OCaml, PHP, Python, Rust, Shell/bash, Solidity, SQL</p>
+            <p>Assembly, Bash, C, C++, Java, Go, Lisp, OCaml, PHP, Python, Rust, Solidity, SQL</p>
             <p className='me-tb'><b>Front-end/UI</b></p>
             <p>{tagGroups.FE.join(', ')}</p>
             <p className='me-tb'><b>Back-end/Infrastructure</b></p>
