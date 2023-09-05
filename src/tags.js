@@ -167,6 +167,10 @@ export default {
     name: 'PostgreSQL',
     type: 'BEI'
   },
+  rds: {
+    name: 'Redis',
+    type: 'BEI'
+  },
   rjs: {
     name: 'React',
     class: 'black cyan-text text-accent-2'

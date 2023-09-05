@@ -157,11 +157,11 @@ export default class Main extends Component {
             </div>
             <div className='col s12 m6 l6'>
               <div className='work-col'>
-                <p>Created the microservices, serverless functions, and helped design the models required to realize the shift scheduling product</p>
-                <p>Contributed to several services by adding new features, bug fixes, and improved their robustness with tracing, helpful logging, alerts, and increased unit test coverage</p>
-                <p>Started and maintained an engineering support handbook to increase response times</p>
-                <p>Mentored junior developers to ensure consistent architecture and codebase</p>
-                <p><i>Additional details and tags to come</i></p>
+                <p>Created microservices, serverless functions, and helped design the models required to realize the shift scheduling product.</p>
+                <p>Contributed to several services by adding new features, bug fixes, and improved their robustness with tracing, helpful logging, alerts, and increased unit test coverage.</p>
+                <p>Started and maintained an engineering support handbook to increase response times.</p>
+                <p>Mentored junior developers to ensure consistent architecture and codebase.</p>
+                <p><i>Additional details to come</i></p>
               </div>
             </div>
           </div>
