@@ -135,6 +135,7 @@ export default class Main extends Component {
         <div className='container'>
           <h2 className='light'>hello</h2>
           <h5 className='light'>I'm Kyoseong (Austin), and I like to build stuff</h5>
+          <p>(I've only been updating this website's text - it does not reflect my current front-end skills)</p>
         </div>
       </div>
       <div className='section-light sectionWork'>

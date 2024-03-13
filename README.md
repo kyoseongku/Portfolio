@@ -2,9 +2,11 @@
 
 I do a demonstrate of my work. [Do a viewing](https://www.kyoseong.com).
 
-The portfolio code is NOT representative of my front-end work. Just something I threw together a while back.
+I've only been updating text since I threw this together a long time ago. It does not reflect my current front-end skills.
 
 ## TODO
+
+Major refresh?
 
 ## Demos
 
