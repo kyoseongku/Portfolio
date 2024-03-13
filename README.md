@@ -4,9 +4,9 @@ I do a demonstrate of my work. [Do a viewing](https://www.kyoseong.com).
 
 The portfolio code is NOT representative of my front-end work. Just something I threw together a while back.
 
-### TODO
+## TODO
 
-* Cleanup S3
+## Demos
 
 ### Optimal string alignment distance using Damerau–Levenshtein distance algorithm
 
@@ -29,3 +29,11 @@ curl
   result: 5
 }
 ```
+
+## Notes
+
+### Development
+
+AWS CLI needed, used 2.15.2
+
+Use Node 16.20.2

@@ -66,9 +66,6 @@
 .me-ext-btn:hover {
   cursor: pointer;
 }
-.me-ext-btn-1 {
-  margin-top: 50px;
-}
 .me-ext-btn-1:hover {
   background: rgba(5, 170, 245, 0.75);
 }
@@ -78,6 +75,7 @@
 
 .me-img {
   margin-top: 50px;
+  margin-bottom: 50px;
   max-height: 600px;
   overflow-y: hidden;
 }

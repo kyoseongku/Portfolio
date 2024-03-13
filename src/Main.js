@@ -148,6 +148,27 @@ export default class Main extends Component {
               <div className='center work-col alto-logo'>
                 <img
                   className='responsive-img'
+                  src='/static/img/logo_mb.png'
+                  alt='Alto logo'
+                />
+                <p>Sept. 2023 - Present</p>
+                <p>Senior back-end software engineer</p>
+              </div>
+            </div>
+            <div className='col s12 m6 l6'>
+              <div className='work-col'>
+                <p>Helped design and develop the service that allows security-focused customers to retain control of their proprietary data while utilizing Mapbox's web-based computational products.</p>
+                <p>Designed and developed an internal knowledgebase AI assistant with Slack as the user interface.</p>
+                <p>Provided bug fixes and updates to multiple services.</p>
+                <p><i>Additional details to come</i></p>
+              </div>
+            </div>
+          </div>
+          <div className='row work-row'>
+            <div className='col s12 m6 l6'>
+              <div className='center work-col alto-logo'>
+                <img
+                  className='responsive-img'
                   src='/static/img/logo_alto.png'
                   alt='Alto logo'
                 />
@@ -157,11 +178,10 @@ export default class Main extends Component {
             </div>
             <div className='col s12 m6 l6'>
               <div className='work-col'>
-                <p>Created microservices, serverless functions, and helped design the models required to realize the shift scheduling product.</p>
-                <p>Contributed to several services by adding new features, bug fixes, and improved their robustness with tracing, helpful logging, alerts, and increased unit test coverage.</p>
-                <p>Started and maintained an engineering support handbook to increase response times.</p>
+                <p>Helped design and develop the shift scheduling service as the sole back-end engineer.</p>
+                <p>Contributed to several services by adding new features, bug fixes, tests, tracing, insightful logging, and alerts.</p>
+                <p>Started and maintained an engineering support handbook to decrease incident resolution times.</p>
                 <p>Mentored junior developers to ensure consistent architecture and codebase.</p>
-                <p><i>Additional details to come</i></p>
               </div>
             </div>
           </div>
@@ -174,7 +194,7 @@ export default class Main extends Component {
                   alt='SuperCare Health logo'
                 />
                 <p>Feb. 2017 - Dec. 2021</p>
-                <p>Senior software engineer</p>
+                <p>Senior full-stack software engineer</p>
               </div>
             </div>
             <div className='col s12 m6 l6'>
@@ -228,6 +248,7 @@ export default class Main extends Component {
               </div>
               <div className='school-courses'>
                 <h5 className='light'>Relevant coursework</h5>
+                <br/>
                 <p>Algorithms &amp; Complexity</p>
                 <p>Artificial Intelligence</p>
                 <p>Computer Graphics</p>
@@ -241,7 +262,7 @@ export default class Main extends Component {
                 <p>Programming Languages</p>
                 <p>Software Engineering</p>
                 <p>Web Applications</p>
-                <p>---</p>
+                <br/>
                 <p>Entrepreneurship for Engineers</p>
                 <p>Finance and Marketing for Engineers</p>
                 <p>Systems Engineering</p>
@@ -253,37 +274,25 @@ export default class Main extends Component {
               </div>
               <div
                 className='me-ext-btn me-ext-btn-1'
+                onClick={() => { window.open('https://www.linkedin.com/in/kyoseong-ku/', '_blank') }}
+              >
+                <span>LinkedIn</span>
+              </div>
+              <div
+                className='me-ext-btn me-ext-btn-2'
                 onClick={() => { window.open('https://github.com/kyoseongku', '_blank') }}
               >
                 <span>GitHub</span>
               </div>
               <div
-                className='me-ext-btn me-ext-btn-2'
+                className='me-ext-btn me-ext-btn-1'
                 onClick={() => {
                   window.open('https://s3-us-west-2.amazonaws.com/kks.portfolio/static/Resume-Kyoseong_Ku.pdf', '_blank')
                 }}
               >
-                <span>Resume (Aug. 2023)</span>
+                <span>Resume (Mar. 2024)</span>
               </div>
             </div>
-          </div>
-          <div className='pad'/>
-          <div className='section-projects-header'>
-            <h5 className='light'>toolbox</h5>
-          </div>
-          <div className='row'>
-            <p className='me-tb'><b>Languages</b></p>
-            <p>Node.js+TypeScript</p>
-            <p className='me-tb'><b>Languages used in the past</b></p>
-            <p>Assembly, Bash, C, C++, Java, Go, Lisp, OCaml, PHP, Python, Rust, Solidity, SQL</p>
-            <p className='me-tb'><b>Front-end/UI</b></p>
-            <p>{tagGroups.FE.join(', ')}</p>
-            <p className='me-tb'><b>Back-end/Infrastructure</b></p>
-            <p>{tagGroups.BEI.join(', ')}</p>
-            <p className='me-tb'><b>Libraries/Technologies</b></p>
-            <p>{tagGroups.LIB.join(', ')}</p>
-            <p className='me-tb'><b>APIs</b></p>
-            <p>{tagGroups.API.join(', ')}</p>
           </div>
         </div>
       </div>
